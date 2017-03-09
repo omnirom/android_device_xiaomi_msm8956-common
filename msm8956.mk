@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
+# Charger images
+PRODUCT_PACKAGES += \
+    omni_charger_res_images
+
 # Configstore
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.0-service
