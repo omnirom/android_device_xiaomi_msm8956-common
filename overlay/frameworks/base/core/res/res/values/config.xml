@@ -181,6 +181,9 @@
         <item>255</item>
     </integer-array>
 
+    <!-- Boolean indicating whether we want button brightness support -->
+    <bool name="config_button_brightness_support">true</bool>
+
     <!-- MMS user agent string -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
