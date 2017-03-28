@@ -44,6 +44,9 @@ ENABLE_CPUSETS := true
 TARGET_BOOTLOADER_BOARD_NAME := msm8952
 TARGET_NO_BOOTLOADER := true
 
+# Use CLANG
+USE_CLANG_PLATFORM_BUILD := true
+
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 ramoops_memreserve=4M androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x80000000
