@@ -23,7 +23,6 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Boot animation
-TARGET_BOOTANIMATION_HALF_RES := true
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
@@ -138,10 +137,6 @@ PRODUCT_PACKAGES += \
 # Doze mode
 #PRODUCT_PACKAGES += \
 #    XiaomiDoze
-
-# Face detection extension
-PRODUCT_PACKAGES += \
-    org.codeaurora.camera
 
 # Fingerprint
 PRODUCT_PACKAGES += \
