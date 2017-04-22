@@ -160,6 +160,9 @@ on boot
     chown root system /proc/touchpanel/capacitive_keys_enable
     chmod 0660 /proc/touchpanel/capacitive_keys_enable
 
+on post-fs
+    start qseecomd
+
 # msm specific files that need to be created on /data
 on post-fs-data
     # Create directory for TZ Apps
