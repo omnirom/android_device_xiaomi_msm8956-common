@@ -118,3 +118,6 @@ persist.timed.enable=true
 
 # WiFi
 wifi.interface=wlan0
+
+# set SELinux property value
+ro.build.selinux=1
