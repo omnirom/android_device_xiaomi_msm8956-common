@@ -369,4 +369,7 @@
          provisioning, availability etc -->
     <bool name="config_carrier_vt_available">true</bool>
 
+    <!-- Boolean indicating whether we want button brightness support --> 
+    <bool name="config_button_brightness_support">true</bool>
 </resources>
+
