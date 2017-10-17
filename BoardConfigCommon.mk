@@ -111,6 +111,16 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 # CNE
 BOARD_USES_QCNE := true
 
+# Enable dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    WITH_DEXPREOPT := true
+    WITH_DEXPREOPT_DEBUG_INFO := false
+    USE_DEX2OAT_DEBUG := false
+    DONT_DEXPREOPT_PREBUILTS := true
+  endif
+endif
+
 # Display
 MAX_VIRTUAL_DISPLAY_DIMENSION := 2048
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
