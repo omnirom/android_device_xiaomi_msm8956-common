@@ -26,6 +26,7 @@
  */
 
 #include <sys/sysinfo.h>
+#include <android-base/logging.h>
 
 #include "property_service.h"
 
@@ -33,6 +34,9 @@ char const *heapstartsize;
 char const *heapgrowthlimit;
 char const *heapsize;
 char const *heapminfree;
+
+namespace android {
+namespace init {
 
 void check_device()
 {
@@ -59,6 +63,8 @@ void vendor_load_properties()
 {
     check_device();
 
+    LOG(INFO) << __func__ << "\n";
+
     android::init::property_set("dalvik.vm.heapstartsize", heapstartsize);
     android::init::property_set("dalvik.vm.heapgrowthlimit", heapgrowthlimit);
     android::init::property_set("dalvik.vm.heapsize", heapsize);
@@ -66,3 +72,5 @@ void vendor_load_properties()
     android::init::property_set("dalvik.vm.heapminfree", heapminfree);
     android::init::property_set("dalvik.vm.heapmaxfree", "8m");
 }
+}  // namespace init
+}  // namespace android
