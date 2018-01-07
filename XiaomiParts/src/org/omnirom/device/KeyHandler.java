@@ -115,9 +115,9 @@ public class KeyHandler implements DeviceKeyHandler {
                 UserHandle.USER_CURRENT) == 1;
         if (DEBUG) Log.i(TAG, "setButtonDisable=" + mButtonDisabled);
         if(mButtonDisabled)
-            Utils.writeValue(KEY_CONTROL_PATH, "1");
-        else
             Utils.writeValue(KEY_CONTROL_PATH, "0");
+        else
+            Utils.writeValue(KEY_CONTROL_PATH, "1");
     }
 
     @Override
