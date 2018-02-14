@@ -260,3 +260,5 @@
 # FPC
 /sys/devices/soc.0/fpc_fpc1020.*        irq             0660        system      system
 /sys/devices/soc.0/fpc_fpc1020.*        enable_wakeup   0660        system      system
+
+/sys/devices/platform/kcal_ctrl.0/* 0666 system system
