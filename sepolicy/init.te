@@ -1,6 +1,6 @@
 allow init debugfs:file write;
 allow init debugfs:dir mounton;
-allow init vendor_file:file execute_no_trans;
+#allow init vendor_file:file execute_no_trans;
 allow init proc:lnk_file setattr;
 allow init hwservicemanager:binder { call transfer };
 allow init ion_device:chr_file ioctl;
