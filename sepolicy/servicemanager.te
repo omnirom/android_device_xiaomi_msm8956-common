@@ -1,0 +1,9 @@
+allow servicemanager ims:dir search;
+allow servicemanager ims:file { open read };
+allow servicemanager ims:process getattr;
+allow servicemanager location:dir search;
+allow servicemanager location:file { open read };
+allow servicemanager location:process getattr;
+allow servicemanager rild:dir search;
+allow servicemanager rild:file { open read };
+allow servicemanager rild:process getattr;
