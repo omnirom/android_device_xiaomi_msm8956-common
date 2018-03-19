@@ -7,6 +7,7 @@ allow init ion_device:chr_file ioctl;
 allow init tee_device:chr_file { ioctl write };
 allow init uhid_device:chr_file { ioctl write };
 allow init socket_device:sock_file { create setattr };
+allow init fingerprintd_data_file:file rename;
 
 # DT2W
 allow init sysfs_dt2w:file { rw_file_perms setattr };
