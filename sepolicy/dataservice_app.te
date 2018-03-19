@@ -1,3 +1,4 @@
 allow dataservice_app cnd_socket:sock_file write;
 allow dataservice_app cnd:unix_stream_socket connectto;
 allow dataservice_app sysfs:file { open read };
+allow dataservice_app qtitetherservice_service:service_manager add;
