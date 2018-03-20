@@ -1,6 +1,0 @@
-#allow dpmd self:socket ioctl;
-allow dpmd self:capability dac_override;
-allow dpmd qmuxd_socket:dir { add_name write };
-allow dpmd qmuxd_socket:sock_file { create write };
-allow dpmd qmuxd:unix_stream_socket connectto;
-allow dpmd self:udp_socket ioctl;
