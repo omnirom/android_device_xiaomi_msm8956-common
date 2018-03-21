@@ -1,5 +1,4 @@
 allow kernel domain:process setsched;
-#allow kernel self:capability dac_override;
 
 allow kernel kcal_dev:dir relabelto;
 allow kernel kcal_dev:file relabelto;
