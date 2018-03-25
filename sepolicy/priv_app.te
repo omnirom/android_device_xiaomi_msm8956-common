@@ -3,3 +3,6 @@ allow priv_app device:dir r_dir_perms;
 #allow priv_app fuseblk:file r_file_perms;
 allow priv_app proc_stat:file { getattr open read };
 allow priv_app proc_interrupts:file { open read };
+allow priv_app fsck_exec:lnk_file getattr;
+allow priv_app mkfs_exec:lnk_file getattr;
+allow priv_app rfs_system_file:dir getattr;
