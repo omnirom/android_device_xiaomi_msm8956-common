@@ -53,3 +53,6 @@
 
 # Power
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service-qti      u:object_r:hal_power_default_exec:s0
+
+# keypad_mode
+/sys/devices/soc.0/78b8000.i2c/i2c-4/4-004a/keypad_mode               u:object_r:sysfs_keypad_mode:s0

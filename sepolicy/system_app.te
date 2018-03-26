@@ -1,5 +1,6 @@
 allow system_app proc_touchpanel:dir search;
 allow system_app time_daemon:unix_stream_socket connectto;
+allow system_app sysfs_keypad_mode:file write;
 
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app kcal_dev:dir search;
