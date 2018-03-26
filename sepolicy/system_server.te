@@ -8,6 +8,7 @@ allow system_server qmuxd_socket:dir { add_name write };
 allow system_server qmuxd_socket:sock_file { create write };
 allow system_server qmuxd:unix_stream_socket connectto;
 allow system_server qti_debugfs:file { getattr open read };
+allow system_server sysfs_keypad_mode:file write;
 
 allow system_server kcal_dev:dir r_dir_perms;
 allow system_server kcal_dev:file rw_file_perms;

@@ -8,3 +8,4 @@ allow qti_init_shell qmuxd_socket:dir w_dir_perms;
 allow qti_init_shell qmuxd_socket:sock_file create_file_perms;
 allow qti_init_shell shell_exec:file { entrypoint getattr read };
 allow qti_init_shell toolbox_exec:file { execute execute_no_trans getattr open read };
+allow qti_init_shell sysfs_keypad_mode:file setattr;
