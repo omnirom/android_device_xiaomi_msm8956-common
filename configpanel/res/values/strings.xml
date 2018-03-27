@@ -34,4 +34,5 @@
     <string name="kcal_saturation">Saturation</string>
     <string name="kcal_contrast">Constrast</string>
     <string name="menu_reset">Reset</string>
+    <string name="kcal_color_temp">Color temperature (K)</string>
 </resources>
