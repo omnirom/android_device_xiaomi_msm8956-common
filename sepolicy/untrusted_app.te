@@ -5,3 +5,6 @@ allow untrusted_app rootfs:dir { open read };
 
 # vmstat
 allow untrusted_app proc_vmstat:file { getattr open read };
+
+# Camera
+get_prop(untrusted_app_25, camera_prop);
