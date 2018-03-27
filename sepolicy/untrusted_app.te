@@ -8,3 +8,7 @@ allow untrusted_app proc_vmstat:file { getattr open read };
 
 # Camera
 get_prop(untrusted_app_25, camera_prop);
+
+# zram
+allow untrusted_app sysfs_zram:dir search;
+allow untrusted_app sysfs_zram:file { getattr open read };
