@@ -6,3 +6,6 @@ allow priv_app proc_interrupts:file { open read };
 allow priv_app fsck_exec:lnk_file getattr;
 allow priv_app mkfs_exec:lnk_file getattr;
 allow priv_app rfs_system_file:dir getattr;
+
+# vmstat
+allow priv_app proc_vmstat:file { getattr open read };

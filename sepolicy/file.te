@@ -10,3 +10,6 @@ type sysfs_dt2w, sysfs_type, fs_type;
 
 # keypad_mode
 type sysfs_keypad_mode, sysfs_type, fs_type;
+
+# vmstat
+type proc_vmstat, fs_type;
