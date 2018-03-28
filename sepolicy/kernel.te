@@ -1,4 +1,5 @@
 allow kernel domain:process setsched;
+allow kernel tmpfs:dir search;
 
 allow kernel kcal_dev:dir relabelto;
 allow kernel kcal_dev:file relabelto;
