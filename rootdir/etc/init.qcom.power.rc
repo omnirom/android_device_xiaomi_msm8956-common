@@ -126,6 +126,11 @@ on property:sys.boot_completed=1
     write /sys/module/process_reclaim/parameters/per_swap_size 1024
     write /sys/module/process_reclaim/parameters/swap_opt_eff 30
     write /sys/module/process_reclaim/parameters/pressure_max 70
+    
+    # Input boost configuration
+    write /sys/kernel/cpu_input_boost/ib_freqs "1017600 1248000"
+    write /sys/kernel/cpu_input_boost/ib_duration_ms 1000
+    write /sys/kernel/cpu_input_boost/enabled 1
 
 on charger
     # Disable thermal
